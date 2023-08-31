@@ -135,6 +135,7 @@ hm = HangMan(words)
 #selection of category
 while True:
     cat=input("Enter the category number: ")
+    print()
     if (cat.isdigit()):
         cat=int(cat)
         if (1<=cat<=4):
@@ -174,6 +175,7 @@ else:
     print("Get ready to taste victory in the 'Fruits' category!")
     print("Your choice has set you on a fruity quest where every correct guess is as sweet as a ripe berry.")
     print("Peel away the mystery letters and savor the satisfaction of uncovering the juiciest words!")
+    print("Let's get started\n")
     count=0
     w = random.choice(words[1])
     hm.play(w)
